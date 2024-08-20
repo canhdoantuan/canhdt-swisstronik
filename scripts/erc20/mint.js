@@ -31,7 +31,9 @@ async function main() {
     `Minting token has been success! Transaction hash: https://explorer-evm.testnet.swisstronik.com/tx/${mint100TokensTx.hash}`
   );
 }
-
+// npx hardhat run scripts/erc20/deploy.js --network swisstronik
+// node scripts/erc20/mint
+// node scripts/erc20/transfer
 main().catch((error) => {
   console.error(error);
   process.exitCode = 1;

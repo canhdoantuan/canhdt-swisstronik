@@ -10,7 +10,8 @@ async function main() {
   fs.writeFileSync("contract.txt", deployedContract);
   console.log(`Contract deployed to ${deployedContract}`);
 }
-
+// npx hardhat run scripts/private-nft/deploy.js --network swisstronik
+// node scripts/private-nft/mint.js
 main().catch((error) => {
   console.error(error);
   process.exitCode = 1;

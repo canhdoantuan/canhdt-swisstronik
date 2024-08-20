@@ -6,7 +6,7 @@ async function main() {
    * @dev the second argument must be the message we want to set in the contract during the deployment process
    */
   const contract = await hre.ethers.deployContract("Swisstronik", [
-    "Hello Swisstronik!!",
+    "Hello Swisstronik from Chien",
   ]);
 
   await contract.waitForDeployment();
@@ -17,6 +17,7 @@ async function main() {
 //DEFAULT BY HARDHAT:
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
+// npx hardhat run scripts/deploy.js --network swisstronik
 main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
