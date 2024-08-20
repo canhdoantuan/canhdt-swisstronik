@@ -10,7 +10,7 @@ async function main() {
 }
 // npx hardhat run scripts/perc20/deploy.js --network swisstronik
 // node scripts/perc20/mint.js
-// node scripts/perc20/transfer
+// node scripts/perc20/transfer.js
 main().catch((error) => {
   console.error(error);
   process.exitCode = 1;

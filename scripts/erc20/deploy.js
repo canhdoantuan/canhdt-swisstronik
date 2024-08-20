@@ -8,7 +8,9 @@ async function main() {
   fs.writeFileSync("contract.txt", deployedContract);
   console.log(`Contract deployed to ${deployedContract}`);
 }
-
+// npx hardhat run scripts/erc20/deploy.js --network swisstronik
+// node scripts/erc20/mint.js
+// node scripts/erc20/transfer.js
 main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
